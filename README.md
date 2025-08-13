@@ -18,16 +18,15 @@ Ce programme a été développé pour **tester la communication avec un périph�
 
 ## Utilisation
 
-1. Connecter le périphérique I²C à la carte ESP32-C3 avec SDA et SCL correctement reliés.
-2. Modifier dans le code les broches SDA et SCL si nécessaire.
-3. Définir l'adresse I²C à tester.
+1. Connecter le périphérique I²C à la carte ESP32-C3 avec SDA sur IO6 et SCL sur IO7.
+2. Modifier la constante ESCLAVE_ADDR afin qu'elle corresponde à l'addresse de l'esclave utilisé.
 4. Téléverser le programme sur l’ESP32-C3.
-5. Ouvrir le **Moniteur Série** (115200 bauds) pour observer le résultat.
+5. Ouvrir le **Moniteur Série** (9600 bauds) pour observer le résultat.
 
 ## Compatibilité
 
 Testé avec succès sur :  
-- ESP32-C3 DevKitM-1  
+- ESP32-C3 DevKitM-1
 
 ## Licence
 
